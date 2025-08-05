@@ -22,11 +22,12 @@ const Register = () => {
       return;
     }
     try {
-      await axios.post("http://localhost:3000/api/auth/register", {
+      await axios.post("https://focusflow-hlez.onrender.com/api/auth/register", {
         name,
         email,
         password,
-      });
+      },
+     { withCredentials: true });
 
       toast.success("🎉Registration successful!");
       setName("")

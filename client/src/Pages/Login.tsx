@@ -12,10 +12,13 @@ const Login = () => {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3000/api/auth/login", {
+      const res = await axios.post("https://focusflow-hlez.onrender.com/api/auth/login", {
         email,
         password,
-      });
+      }, 
+    {
+      withCredentials: true,
+    });
       localStorage.setItem("token", res.data.token);
       toast.success("🎉 Login successful!");
       setEmail("");

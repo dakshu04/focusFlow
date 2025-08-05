@@ -5,7 +5,12 @@ import authRoutes from "./routes/authRoutes";
 
 import cors from "cors"
 
-dotenv.config();
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://focus-flow-rose.vercel.app"
+  ];
+
+  dotenv.config();
 connectDB();
 
 const app = express();
@@ -14,7 +19,7 @@ const PORT = process.env.PORT!;
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: "https://focus-flow-rose.vercel.app/", // Your frontend port (Vite)
+  origin: allowedOrigins, // Your frontend port (Vite)
   credentials: true
 }));
 
