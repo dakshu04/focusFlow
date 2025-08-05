@@ -8,8 +8,8 @@ const Dashboard = () => {
     }
     return (
         <>  
-        <h1>Hi</h1>
-            <Button 
+        <h1 className="text-6xl flex justify-center items-center">Nishant ki maa ki chu**</h1>
+            <Button className="flex justify-center items-center"
             onClick={handleLogout}
             variant="destructive">Logout</Button>
         </>
