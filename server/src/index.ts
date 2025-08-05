@@ -14,7 +14,7 @@ const PORT = process.env.PORT!;
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: "http://localhost:5173", // Your frontend port (Vite)
+  origin: "https://focus-flow-rose.vercel.app/", // Your frontend port (Vite)
   credentials: true
 }));
 
