@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import { connectDB } from "./config/db";
 import authRoutes from "./routes/authRoutes";
+
 import cors from "cors"
 
 dotenv.config();
@@ -19,7 +20,7 @@ app.use(cors({
 
 // Routes
 app.use("/api/auth", authRoutes);
-app.use("/api/user", userRoutes);
+
 
 // Start server
 app.listen(PORT, () => {
