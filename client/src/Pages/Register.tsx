@@ -72,7 +72,7 @@ const Register = () => {
 
         <button
           onClick={handleRegister}
-          className="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-xl font-semibold transition duration-300"
+          className="cursor-pointer w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-xl font-semibold transition duration-300"
         >
           Create Account
         </button>
