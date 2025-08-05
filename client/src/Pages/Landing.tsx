@@ -17,7 +17,7 @@ export default function Landing() {
           <li className="cursor-pointer hover:text-white hover:underline transition">FAQ</li>
         </ul>
 
-        <div className="flex gap-4 mt-3">
+        <div className="flex gap-4 mt-4">
           <Button
             onClick={() => navigate("/register")}
             className="cursor-pointer px-6 py-3 rounded-full bg-cyan-600 hover:bg-cyan-700 text-white shadow"
