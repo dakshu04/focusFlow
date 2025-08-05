@@ -54,12 +54,12 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button
-            type="submit"
-            className="cursor-pointer w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-xl font-semibold transition duration-300"
-          >
-            Submit
-          </Button>
+          <button
+          onClick={handleLogin}
+          className="cursor-pointer w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-xl font-semibold transition duration-300"
+        >
+          Create Account
+        </button>
         </form>
       </div>
     </>
