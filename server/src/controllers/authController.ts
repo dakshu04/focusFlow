@@ -19,7 +19,7 @@ export const register = async (req : Request, res: Response) => {
     const user = await User.create({
         name,
         email,
-        password: hashedPass
+        password
     })
 
     res.status(201).json({ message: "User created", user });
