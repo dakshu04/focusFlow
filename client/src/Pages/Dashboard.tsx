@@ -12,7 +12,7 @@ const Dashboard = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white space-y-6">
       <h1 className="text-4xl font-bold text-center">
-        🫵🫃🗝️ chu**
+        Dashboard Page
       </h1>
 
       <img
